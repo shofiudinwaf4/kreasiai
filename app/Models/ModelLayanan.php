@@ -55,4 +55,8 @@ class ModelLayanan extends Model
         //     ->join('kelas', 'kelas.IDKelas=siswa.IDKelas')
         //     ->get()->getResultArray();
     }
+    public function SavePaket($data)
+    {
+        $this->db->table('paketlayanan')->insert($data);
+    }
 }

@@ -52,7 +52,7 @@ class Admin extends BaseController
             'subjudul' => 'Tambah Layanan',
             'menu' => 'Setting',
             'submenu' => 'Tambah Layanan',
-            'page' => 'admin/coba',
+            'page' => 'admin/v_tambahLayanan',
             'validation' => \Config\Services::validation(),
             'profil' => $this->ModelProfil->DetailData(),
             'perusahaan' => $this->ModelPerusahaan->DetailData(),
@@ -217,9 +217,9 @@ class Admin extends BaseController
             'nama_paket' => $this->request->getVar('nama_paket'),
             'harga_paket' => $hargaPaket,
             'potongan_paket' => $diskon,
-            'deskripsi_layanan' => $this->request->getVar('deskripsi_layanan'),
+            'detail_paket' => $this->request->getVar('detail_paket'),
         ];
-        $this->ModelLayanan->SaveLayanan($data);
+        $this->ModelLayanan->SavePaket($data);
         session()->setFlashdata('pesan', 'Data berhasil ditambahkan');
 
         return redirect()->to('admin/daftarLayanan/' . $slug_nama);

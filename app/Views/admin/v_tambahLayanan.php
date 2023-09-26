@@ -1,9 +1,6 @@
  <div class="col-md-6">
      <!-- general form elements -->
      <div class="card card-primary">
-         <div class="card-header">
-             <h3 class="card-title">Tambah Layanan</h3>
-         </div>
          <!-- /.card-header -->
          <!-- form start -->
          <!-- form_open_multipart(base_url('Admin/Layanan/Save'))  -->
