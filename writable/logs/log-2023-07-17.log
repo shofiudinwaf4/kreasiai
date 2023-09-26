@@ -1,0 +1,251 @@
+ERROR - 2023-07-17 22:42:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2) VALUES (:0:, :1:, :2:)' at line 1 in C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\kreasiAi\app\Database\Seeds\Paketlayanan.php(35): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Paketlayanan->run()
+#6 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\xampp\htdocs\kreasiAi\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-07-17 22:53:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0) VALUES (:0:)' at line 1 in C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\kreasiAi\app\Database\Seeds\Paketlayanan.php(21): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Paketlayanan->run()
+#6 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\xampp\htdocs\kreasiAi\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-07-17 22:53:25 --> mysqli_sql_exception: Unknown column 'potongan_harga' in 'field list' in C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\kreasiAi\app\Database\Seeds\Paketlayanan.php(21): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Paketlayanan->run()
+#6 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\xampp\htdocs\kreasiAi\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-07-17 22:54:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, 1, 2) VALUES (:0:, :1:, :2:)' at line 1 in C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\kreasiAi\app\Database\Seeds\Paketlayanan.php(35): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Paketlayanan->run()
+#6 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\xampp\htdocs\kreasiAi\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+INFO - 2023-07-17 22:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 22:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 22:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 22:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 22:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 22:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 23:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 23:10:33 --> Too few arguments to function App\Controllers\Admin::DaftarLayanan(), 1 passed in C:\xampp\htdocs\kreasiAi\vendor\codeigniter4\framework\system\CodeIgniter.php on line 932 and exactly 2 expected
+in APPPATH\Controllers\Admin.php on line 145.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->DaftarLayanan('2')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\kreasiAi\\public\\index.php')
+INFO - 2023-07-17 23:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 23:10:57 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\admin\v_daftarLayanan.php on line 34.
+ 1 APPPATH\Views\admin\v_daftarLayanan.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php', 34)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_daftarLayanan', [], true)
+ 5 APPPATH\Views\admin\v_templateAdmin.php(172): view('admin/v_daftarLayanan')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_templateAdmin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_templateAdmin', [], true)
+ 9 APPPATH\Controllers\Admin.php(159): view('admin/v_templateAdmin', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->DaftarLayanan('2')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\kreasiAi\\public\\index.php')
+INFO - 2023-07-17 23:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 23:13:02 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\admin\v_daftarLayanan.php on line 34.
+ 1 APPPATH\Views\admin\v_daftarLayanan.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php', 34)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_daftarLayanan', [], true)
+ 5 APPPATH\Views\admin\v_templateAdmin.php(172): view('admin/v_daftarLayanan')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_templateAdmin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_templateAdmin', [], true)
+ 9 APPPATH\Controllers\Admin.php(159): view('admin/v_templateAdmin', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->DaftarLayanan('2')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\kreasiAi\\public\\index.php')
+INFO - 2023-07-17 23:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 23:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 23:20:32 --> Undefined array key "deskripsi_paket"
+in APPPATH\Views\admin\v_daftarLayanan.php on line 39.
+ 1 APPPATH\Views\admin\v_daftarLayanan.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi_paket"', 'C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_daftarLayanan', [], true)
+ 5 APPPATH\Views\admin\v_templateAdmin.php(172): view('admin/v_daftarLayanan')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_templateAdmin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_templateAdmin', [], true)
+ 9 APPPATH\Controllers\Admin.php(159): view('admin/v_templateAdmin', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->DaftarLayanan('2')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\kreasiAi\\public\\index.php')
+INFO - 2023-07-17 23:21:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 23:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 23:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 23:25:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 23:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 23:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 23:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 23:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 23:31:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\v_daftarLayanan.php on line 15.
+ 1 APPPATH\Views\admin\v_daftarLayanan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_daftarLayanan', [], true)
+ 5 APPPATH\Views\admin\v_templateAdmin.php(172): view('admin/v_daftarLayanan')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_templateAdmin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_templateAdmin', [], true)
+ 9 APPPATH\Controllers\Admin.php(159): view('admin/v_templateAdmin', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->DaftarLayanan('Website')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\kreasiAi\\public\\index.php')
+INFO - 2023-07-17 23:37:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 23:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 23:37:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\v_daftarLayanan.php on line 15.
+ 1 APPPATH\Views\admin\v_daftarLayanan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_daftarLayanan', [], true)
+ 5 APPPATH\Views\admin\v_templateAdmin.php(172): view('admin/v_daftarLayanan')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_templateAdmin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_templateAdmin', [], true)
+ 9 APPPATH\Controllers\Admin.php(159): view('admin/v_templateAdmin', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->DaftarLayanan('2')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\kreasiAi\\public\\index.php')
+INFO - 2023-07-17 23:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 23:37:15 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\v_daftarLayanan.php on line 15.
+ 1 APPPATH\Views\admin\v_daftarLayanan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_daftarLayanan', [], true)
+ 5 APPPATH\Views\admin\v_templateAdmin.php(172): view('admin/v_daftarLayanan')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_templateAdmin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_templateAdmin', [], true)
+ 9 APPPATH\Controllers\Admin.php(159): view('admin/v_templateAdmin', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->DaftarLayanan('2')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\kreasiAi\\public\\index.php')
+INFO - 2023-07-17 23:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 23:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 23:37:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\v_daftarLayanan.php on line 15.
+ 1 APPPATH\Views\admin\v_daftarLayanan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_daftarLayanan', [], true)
+ 5 APPPATH\Views\admin\v_templateAdmin.php(172): view('admin/v_daftarLayanan')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_templateAdmin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_templateAdmin', [], true)
+ 9 APPPATH\Controllers\Admin.php(159): view('admin/v_templateAdmin', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->DaftarLayanan('2')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\kreasiAi\\public\\index.php')
+INFO - 2023-07-17 23:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 23:38:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\v_daftarLayanan.php on line 15.
+ 1 APPPATH\Views\admin\v_daftarLayanan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_daftarLayanan', [], true)
+ 5 APPPATH\Views\admin\v_templateAdmin.php(172): view('admin/v_daftarLayanan')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_templateAdmin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_templateAdmin', [], true)
+ 9 APPPATH\Controllers\Admin.php(159): view('admin/v_templateAdmin', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->DaftarLayanan('2')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\kreasiAi\\public\\index.php')
+INFO - 2023-07-17 23:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 23:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 23:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 23:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 23:53:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\v_daftarLayanan.php on line 15.
+ 1 APPPATH\Views\admin\v_daftarLayanan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_daftarLayanan', [], true)
+ 5 APPPATH\Views\admin\v_templateAdmin.php(172): view('admin/v_daftarLayanan')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_templateAdmin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_templateAdmin', [], true)
+ 9 APPPATH\Controllers\Admin.php(159): view('admin/v_templateAdmin', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->DaftarLayanan('Desain Logo')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\kreasiAi\\public\\index.php')
+INFO - 2023-07-17 23:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-17 23:54:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\v_daftarLayanan.php on line 15.
+ 1 APPPATH\Views\admin\v_daftarLayanan.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php', 15)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_daftarLayanan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_daftarLayanan', [], true)
+ 5 APPPATH\Views\admin\v_templateAdmin.php(172): view('admin/v_daftarLayanan')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\kreasiAi\\app\\Views\\admin\\v_templateAdmin.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_templateAdmin', [], true)
+ 9 APPPATH\Controllers\Admin.php(159): view('admin/v_templateAdmin', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->DaftarLayanan('Desain Logo')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\kreasiAi\\public\\index.php')
+INFO - 2023-07-17 23:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-17 23:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

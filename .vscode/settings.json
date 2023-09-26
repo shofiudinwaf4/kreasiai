@@ -1,0 +1,9 @@
+{
+  "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {},
+  "editor.formatOnSave": true,
+  "liveServer.settings.port": 5501
+}
