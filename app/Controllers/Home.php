@@ -21,7 +21,7 @@ class Home extends BaseController
             'page' => 'home/index',
             'profil' => $this->ModelProfil->DetailData(),
             'perusahaan' => $this->ModelPerusahaan->DetailData(),
-            'layanan' => $this->ModelLayanan->AllData()
+            'layanan' => $this->ModelLayanan->AllData(),
         ];
         return view('home/layout_home', $data);
     }

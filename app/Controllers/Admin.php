@@ -26,7 +26,8 @@ class Admin extends BaseController
             'page' => 'admin/v_admin',
             'profil' => $this->ModelProfil->DetailData(),
             'perusahaan' => $this->ModelPerusahaan->DetailData(),
-            'layanan' => $this->ModelLayanan->AllData()
+            'layanan' => $this->ModelLayanan->AllData(),
+            'paket' => $this->ModelLayanan->getPaket()
         ];
         return view('admin/v_templateAdmin', $data);
     }
