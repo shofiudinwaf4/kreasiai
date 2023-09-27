@@ -75,6 +75,10 @@
                                 <li class="submenu-item ">
                                     <a href="<?= base_url('admin/layanan'); ?>">Layanan</a>
                                 </li>
+                                <li class="submenu-item ">
+                                    <a href="<?= base_url('admin/perusahaan'); ?>">Perusahaan</a>
+                                </li>
+
                             </ul>
                         </li>
                     </ul>

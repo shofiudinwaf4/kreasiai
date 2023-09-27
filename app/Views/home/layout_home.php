@@ -42,9 +42,9 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo me-auto"><a href="index.html"><?= $perusahaan['nama_perusahaan']; ?></a></h1>
+            <h1 class="logo me-auto"><img src="<?= base_url('img'); ?>/<?= $perusahaan['logo_header']; ?>" alt="Logo" srcset=""><a href="">Kreasi AI</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <!-- <a href=" index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
             <nav id="navbar" class="navbar">
                 <ul>

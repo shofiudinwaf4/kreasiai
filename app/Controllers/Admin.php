@@ -27,7 +27,7 @@ class Admin extends BaseController
             'profil' => $this->ModelProfil->DetailData(),
             'perusahaan' => $this->ModelPerusahaan->DetailData(),
             'layanan' => $this->ModelLayanan->AllData(),
-            'paket' => $this->ModelLayanan->getPaket()
+            'paket' => $this->ModelLayanan->getPaket('slug_nama')
         ];
         return view('admin/v_templateAdmin', $data);
     }
@@ -224,5 +224,101 @@ class Admin extends BaseController
         session()->setFlashdata('pesan', 'Data berhasil ditambahkan');
 
         return redirect()->to('admin/daftarLayanan/' . $slug_nama);
+    }
+    public function Perusahaan()
+    {
+        $data = [
+            'judul' => 'Setting',
+            'subjudul' => 'Perusahaan',
+            'menu' => 'Setting',
+            'submenu' => 'Perusahaan',
+            'page' => 'admin/v_perusahaan',
+            'validation' => \Config\Services::validation(),
+            'profil' => $this->ModelProfil->DetailData(),
+            'perusahaan' => $this->ModelPerusahaan->DetailData(),
+            'layanan' => $this->ModelLayanan->AllData(),
+        ];
+        return view('admin/v_templateAdmin', $data);
+    }
+    public function UpdatePerusahaan()
+    {
+        if ($this->validate([
+            'nama_perusahaan' => [
+                'label' => 'Nama Perusahaan',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Tidak boleh kosong',
+                ]
+            ],
+            'alamat_perusahaan' => [
+                'label' => 'Alamat Perusahaan',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Tidak boleh kosong',
+                ]
+            ],
+            'tentang_Kami' => [
+                'label' => 'Tentang Kami',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} Tidak boleh kosong',
+                ]
+            ],
+            'logo_header' => [
+                'label' => 'File',
+                'rules' => 'max_size[logo_header,2048]|ext_in[logo_header,png]',
+                'errors' => [
+
+                    'max_size' => 'Ukuran {field} Maksimal 2084 KB',
+                    'ext_in' => 'Jenis {field} harus png',
+                ]
+            ],
+            'logo' => [
+                'label' => 'File',
+                'rules' => 'max_size[logo,2048]|ext_in[logo,png]',
+                'errors' => [
+
+                    'max_size' => 'Ukuran {field} Maksimal 2084 KB',
+                    'ext_in' => 'Jenis {field} harus png',
+                ]
+            ],
+
+        ])) {
+            $perusahaan = $this->ModelPerusahaan->DetailData();
+            // $foto_kepsek = $this->request->getFile('logo_dinas');
+            // $logo_sekolah = $this->request->getFile('logo_sekolah');
+            $logo_header = $this->request->getFile('logo_header');
+            $logo = $this->request->getFile('logo');
+
+            if ($logo_header->getError() == 4) {
+                $nama_logo_header = $perusahaan['logo_header'];
+            } else {
+                # code...
+                $nama_logo_header = $logo_header->getRandomName();
+                $logo_header->move('gambar', $nama_logo_header);
+            }
+            if ($logo->getError() == 4) {
+                $nama_logo = $perusahaan['logo'];
+            } else {
+                # code...
+                $nama_logo = $logo->getRandomName();
+                $logo->move('gambar', $nama_logo);
+            }
+            $data = [
+                'perusahaan_id' => 1,
+                'logo' => $nama_logo,
+                'logo_header' => $nama_logo_header,
+                'nama_perusahaan' => $this->request->getPost('nama_perusahaan'),
+                'alamat_perusahaan' => $this->request->getPost('alamat_perusahaan'),
+                'tentang_Kami' => $this->request->getPost('tentang_Kami'),
+            ];
+
+            $this->ModelPerusahaan->UpdateData($data);
+            session()->setFlashdata('update', 'Data berhasil diubah');
+            return redirect()->to('admin/perusahaan');
+            // jika valid
+        } else {
+            return redirect()->to('admin/perusahaan')->withInput();
+        }
     }
 }

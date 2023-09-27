@@ -49,6 +49,8 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->add('daftarLayanan/(:any)', 'Admin::DaftarLayanan/$1');
     $routes->add('tambahPaket/(:any)', 'Admin::TambahPaket/$1');
     $routes->add('savePaket/(:any)', 'Admin::SavePaket/$1');
+    $routes->add('perusahaan', 'Admin::Perusahaan');
+    $routes->add('updateperusahaan', 'Admin::UpdatePerusahaan');
 });
 
 

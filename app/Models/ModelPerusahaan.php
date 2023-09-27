@@ -15,7 +15,7 @@ class ModelPerusahaan extends Model
     public function UpdateData($data)
     {
         $this->db->table('perusahaan')
-            ->where(['perusahaan_id' => $data['perusahaan_id']])
+            ->where('perusahaan_id', $data['perusahaan_id'])
             ->update($data);
     }
 }
